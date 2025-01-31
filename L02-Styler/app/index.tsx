@@ -1,7 +1,11 @@
-import ElevatedCards from "@/components/ElevatedCards";
-import FancyCard from "@/components/FancyCard";
-import FlatCards from "@/components/FlatCards";
 import { ScrollView, StyleSheet } from "react-native";
+import {
+  FlatCards,
+  ElevatedCards,
+  FancyCard,
+  ActionCard,
+  ContactList,
+} from "@/components";
 
 export default function Index() {
   return (
@@ -11,10 +15,10 @@ export default function Index() {
 
       <FancyCard />
       <FancyCard />
-      <FancyCard />
 
-      <FlatCards />
-      <ElevatedCards />
+      <ActionCard />
+
+      <ContactList />
     </ScrollView>
   );
 }
