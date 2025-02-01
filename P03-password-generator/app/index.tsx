@@ -85,8 +85,6 @@ export default function Index() {
           initialValues={{ passwordLength: "5" }}
           validationSchema={passwordSchema}
           onSubmit={(values, { setSubmitting }) => {
-            console.log("values: ", values);
-
             generatePassword(Number(values.passwordLength));
           }}
         >
